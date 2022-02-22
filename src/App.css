@@ -4,25 +4,30 @@ button {
 
 ul {
   list-style: none;
-  display: flex;
-  flex-direction: column;
   padding: 0;
-}
-
-li {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
 }
 
 .App {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 0 10px;
+}
+
+.navbar li {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #282c34;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +40,15 @@ li {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
+}
+
+.books-display ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.books-display li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
