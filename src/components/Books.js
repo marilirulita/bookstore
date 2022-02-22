@@ -1,3 +1,5 @@
+import AddBook from './AddBook';
+
 const Books = () => {
   const books = [
     {
@@ -14,7 +16,7 @@ const Books = () => {
   return (
     <div className="books-display">
       <h2>This is a bookstore</h2>
-      <input type="text" placeholder="Add new book" />
+      <AddBook />
       <ul>
         {books.map((book) => (
           <li key={book.id}>

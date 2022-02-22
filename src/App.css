@@ -36,6 +36,16 @@ ul {
   color: white;
 }
 
+.add-book {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-book input {
+  font-size: large;
+  width: 100%;
+}
+
 .books-display {
   display: flex;
   flex-direction: column;
@@ -50,5 +60,6 @@ ul {
 .books-display li {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   width: 100%;
 }
