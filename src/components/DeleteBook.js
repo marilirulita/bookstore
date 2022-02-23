@@ -24,7 +24,15 @@ const DeleteBook = ({ item }) => {
 };
 
 DeleteBook.propTypes = {
-  item: PropTypes.object.isRequired,
+  item: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string,
+    author: PropTypes.string,
+  }),
+};
+
+DeleteBook.defaultProps = {
+  item: {},
 };
 
 export default DeleteBook;
