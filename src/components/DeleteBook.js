@@ -1,13 +1,13 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
-const DeleteBook = (props) => {
+const DeleteBook = ({ item }) => {
   const dispatch = useDispatch();
-  const { title, author, id } = props.item;
+  const { title, author, id } = item;
 
   const deleteBookFromStore = () => {
-    dispatch(removeBook(props.item));
+    dispatch(removeBook(item));
   };
   return (
     <li>
@@ -21,6 +21,10 @@ const DeleteBook = (props) => {
       </button>
     </li>
   );
+};
+
+DeleteBook.propTypes = {
+  item: PropTypes.object.isRequired,
 };
 
 export default DeleteBook;
