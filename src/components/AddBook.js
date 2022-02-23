@@ -18,14 +18,16 @@ const AddBook = () => {
       id: uuidv4(),
     };
 
-    dispatch(addBook(newBook));
-
-    setState(initState);
+    if (newBook.title !== '' && newBook.author !== '') {
+      dispatch(addBook(newBook));
+      setState(initState);
+    }
   };
 
   return (
     <div className="add-book">
-      <input type="text" placeholder="Add new book" value={state.title} onChange={(e) => setState({ title: e.target.value, author: 'Anonimus' })} />
+      <input type="text" placeholder="Add new book Title" value={state.title} onChange={(e) => setState({ title: e.target.value, author: state.author })} />
+      <input type="text" placeholder="Add new book Author" value={state.author} onChange={(e) => setState({ title: state.title, author: e.target.value })} />
       <button type="submit" value="add-book" onClick={submitBookToStore}>Add</button>
     </div>
   );
