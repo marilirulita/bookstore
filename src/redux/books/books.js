@@ -1,40 +1,36 @@
-const LOAD = 'LOAD';
-const CREATE = 'CREATE';
-const UPDATE = 'UPDATE';
-const REMOVE = 'REMOVE';
+const ADD_BOOK = 'bookStore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
-// export default function reducer(state = {}, action = {}) {
-//   switch (action.type) {
-//     case LOAD:
-//       // get elements to visualize them on screen
-//     case CREATE:
-//     // add a new book to list
-//     case UPDATE:
-//       // change something about book
-//     case REMOVE:
-//       // delete a book from list
-//     default: return state;
-//   }
-// }
+const initialState = [];
 
 // Action Creators
-export function loadBooks() {
-  return { type: LOAD };
-}
+export const addBook = payload => ({ 
+  type: ADD_BOOK,
+  payload 
+})
 
-export function createBook(book) {
-  return { type: CREATE, book };
-}
+export const removeBook = payload => ({ 
+  type: REMOVE_BOOK,
+  payload 
+})
 
-export function updateBook(book) {
-  return { type: UPDATE, book };
-}
-
-export function removeBook(book) {
-  return { type: REMOVE, book };
+// reducer
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case ADD_BOOK:
+      return [
+        ...state, action.payload
+      ]
+    case REMOVE_BOOK:
+      return state.filter(book => book.id !== id)
+    default:
+      return state;
+  }
 }
 
 // side effects, only as applicable
 // export function getBook() {
 //   return (dispatch) => get('/book').then((book) => dispatch(updateBook(book)));
 // }
+
+export default reducer
