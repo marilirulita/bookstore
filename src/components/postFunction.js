@@ -1,4 +1,4 @@
- const postBookApi = async (id, title) => {
+const postBookApi = async (id, title) => {
   const postUrl = await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/A8pinz5DqOreWDXV7Uvo/books/', {
     method: 'POST',
     headers: {
@@ -6,11 +6,12 @@
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-    "item_id": id,
-    "title": title,
-    "category": "Fiction"
-    })
+      item_id: id,
+      title,
+      category: 'Fiction',
+    }),
   });
-}
+  return postUrl;
+};
 
-export default postBookApi
+export default postBookApi;
