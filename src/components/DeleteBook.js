@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
+import deleteBookApi from './deleteFuntion';
 
 const DeleteBook = ({ item }) => {
   const dispatch = useDispatch();
@@ -8,7 +9,9 @@ const DeleteBook = ({ item }) => {
 
   const deleteBookFromStore = () => {
     dispatch(removeBook(item));
+    deleteBookApi(id);
   };
+
   return (
     <li>
       <span>
