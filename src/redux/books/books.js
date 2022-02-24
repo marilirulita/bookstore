@@ -1,5 +1,6 @@
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
+// const GET_API_DATA = 'bookStore/books/GET_API_DATA'
 
 const initialState = [];
 
@@ -14,6 +15,11 @@ export const removeBook = (payload) => ({
   payload,
 });
 
+// export const getApiData = (payload) => ({
+//   type: GET_API_DATA,
+//   payload,
+// })
+
 // reducer
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -23,6 +29,10 @@ const reducer = (state = initialState, action) => {
       ];
     case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.payload.id);
+    // case GET_API_DATA:
+    //   return [
+    //     ...action.payload
+    //   ]
     default:
       return state;
   }
