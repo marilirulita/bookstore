@@ -50,7 +50,7 @@ const AddBook = () => {
           onClick={submitBookToStore}
           className="add-book-button"
         >
-          <span className="ADD-BOOK Text-Style">ADD BOOK</span>
+          <span className="ADD-BOOK">ADD BOOK</span>
         </button>
       </div>
     </div>

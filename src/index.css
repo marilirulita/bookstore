@@ -5,7 +5,7 @@
 
 .panel-bg {
   border-radius: 4px;
-  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 2.5rem 4.062rem 50px 0 rgba(0, 0, 0, 0.2), 0 0 60px 0 rgba(0, 0, 0, 0.05);
   background-color: #fafafa;
 }
 
@@ -15,6 +15,7 @@
   background-color: #fff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .links {
@@ -24,7 +25,7 @@
 
 .Bookstore-CMS1 {
   margin: 0 2.938rem 0 0;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -37,7 +38,7 @@
 .BOOKS,
 .CATEGORIES {
   margin: 0 2.563rem 0 0;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -68,6 +69,10 @@
   margin-bottom: 2.5rem;
 }
 
+.Category-display {
+  padding-bottom: 2.5rem;
+}
+
 .Lesson-Panel {
   margin: 0.938rem 6.25rem;
   padding: 2rem 9.188rem 1.625rem 1.688rem;
@@ -86,7 +91,7 @@
 
 .Category {
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -97,7 +102,7 @@
 }
 
 .Title {
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 1.375rem;
   font-weight: bold;
   font-stretch: normal;
@@ -108,7 +113,7 @@
 }
 
 .Author {
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -126,7 +131,7 @@
 }
 
 .Delete-text {
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -136,6 +141,7 @@
   text-align: center;
   color: #fff;
 }
+
 .add-book {
   margin: 0 6.25rem;
   padding: 1.813rem 0 16.653rem 0;
@@ -144,7 +150,7 @@
 
 .add-book-title {
   margin: 0;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
@@ -170,7 +176,7 @@
 }
 
 .inputs::placeholder {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: normal;
   font-stretch: normal;
@@ -188,19 +194,7 @@
 }
 
 .ADD-BOOK {
-  font-family: RobotoSlab;
-  font-size: 0.813rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.5px;
-  text-align: center;
-  color: #fff;
-}
-
-.Text-Style {
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: bold;
   font-stretch: normal;
