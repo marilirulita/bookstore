@@ -1,5 +1,5 @@
 .Bookstore-CMS {
-  padding: 9.313rem 3.75rem 7.688rem 6.25rem;
+  padding: 9.313rem 6.25rem 11.75rem 6.25rem;
   background-color: #f5f6fa;
 }
 
@@ -62,6 +62,10 @@
   width: 1.063rem;
   height: 1.063rem;
   background-color: #0290ff;
+}
+
+.books-display {
+  margin-bottom: 2.5rem;
 }
 
 .Lesson-Panel {
@@ -132,9 +136,14 @@
   text-align: center;
   color: #fff;
 }
+.add-book {
+  margin: 0 6.25rem;
+  padding: 1.813rem 0 16.653rem 0;
+  border-top: 2px solid #e8e8e8;
+}
 
-.Title1 {
-  margin: 1.813rem 32.75rem 1.188rem 0;
+.add-book-title {
+  margin: 0;
   font-family: Montserrat;
   font-size: 1.25rem;
   font-weight: bold;
@@ -145,15 +154,22 @@
   color: #888;
 }
 
-.Lesson-Panel1 {
-  margin: 1.188rem 2.125rem 0 0;
-  padding: 0.813rem 35.688rem 0.813rem 1.063rem;
+.inputs-elements {
+  margin-top: 1.188rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs {
+  flex: 1;
+  margin-right: 2.125rem;
+  padding: 0.813rem 1.063rem;
   border-radius: 4px;
-  border: solid 1px var(--white);
+  border: solid 1px #e8e8e8;
   background-color: #fff;
 }
 
-.Lesson-Panel1::placeholder {
+.inputs::placeholder {
   font-family: Montserrat;
   font-size: 1rem;
   font-weight: normal;
@@ -164,11 +180,11 @@
   color: #c4c4c4;
 }
 
-.Rectangle-3 {
-  margin: 1.188rem 0 0 2.125rem;
+.add-book-button {
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
   background-color: #0290ff;
+  border: none;
 }
 
 .ADD-BOOK {

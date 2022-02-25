@@ -14,7 +14,11 @@ const Books = () => {
 
   return (
     <div>
-      {books.map((book) => (<DeleteBook key={book.id} item={book} />))}
+      <div className="books-display">
+        {books.map((book) => (
+          <DeleteBook key={book.id} item={book} />
+        ))}
+      </div>
       <AddBook />
     </div>
   );
