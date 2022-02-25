@@ -15,6 +15,11 @@ export const removeBook = (payload) => ({
   payload,
 });
 
+const getApiData = (payload) => ({
+  type: GET_API_DATA,
+  payload,
+});
+
 export const fetchApiData = () => async (dispatch) => {
   const result = await fetch(
     'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/A8pinz5DqOreWDXV7Uvo/books/',
@@ -26,11 +31,7 @@ export const fetchApiData = () => async (dispatch) => {
       author: 'Anonimous',
       ...resultJson[key][0],
     }));
-
-    dispatch({
-      type: GET_API_DATA,
-      payload: objeArr,
-    });
+    dispatch(getApiData(objeArr));
   }
 };
 
@@ -42,7 +43,7 @@ const reducer = (state = initialState, action) => {
     case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.payload.id);
     case GET_API_DATA:
-      return [...state, ...action.payload];
+      return [...action.payload];
     default:
       return state;
   }
