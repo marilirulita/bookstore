@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { useState } from 'react';
@@ -21,7 +22,6 @@ const AddBook = () => {
 
     if (newBook.title !== '' && newBook.author !== '') {
       dispatch(postBookApi(newBook));
-      // postBookApi(newBook.id, [newBook.title, newBook.author]);
       setState(initState);
     }
   };

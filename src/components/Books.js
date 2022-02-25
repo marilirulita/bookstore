@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchApiData } from '../redux/books/books';
