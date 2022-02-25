@@ -13,7 +13,7 @@ const Books = () => {
   }, []);
 
   return (
-    <div className="books-display">
+    <div>
       {books.map((book) => (<DeleteBook key={book.id} item={book} />))}
       <AddBook />
     </div>

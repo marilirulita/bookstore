@@ -14,11 +14,19 @@ const DeleteBook = ({ item }) => {
 
   return (
     <div className="Lesson-Panel">
-      <span className="School-of">{category}</span>
-      <span className="Title">{title}</span>
-      <span className="Author">{author}</span>
-      <button id={id} type="submit" value="delete" onClick={deleteBookFromStore} className="Rectangle-2">
-        <span className="Update-progress">DELETE BOOK</span>
+      <div className="book-info">
+        <span className="Category">{category}</span>
+        <span className="Title">{title}</span>
+        <span className="Author">{author}</span>
+      </div>
+      <button
+        id={id}
+        type="submit"
+        value="delete"
+        onClick={deleteBookFromStore}
+        className="Delete-button"
+      >
+        <span className="Delete-text">DELETE BOOK</span>
       </button>
     </div>
   );

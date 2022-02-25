@@ -8,12 +8,10 @@ function App() {
   return (
     <div className="panel-bg">
       <Navbar />
-      <div className="App-header">
-        <Routes>
-          <Route path="/" element={<Books />} />
-          <Route path="categories" element={<Categories />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Books />} />
+        <Route path="categories" element={<Categories />} />
+      </Routes>
     </div>
   );
 }
