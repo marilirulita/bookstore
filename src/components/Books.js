@@ -1,10 +1,17 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchApiData } from '../redux/books/books';
 import AddBook from './AddBook';
 import DeleteBook from './DeleteBook';
 
 const Books = () => {
   const books = useSelector((state) => state.booksReducer);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchApiData());
+  }, []);
+
   return (
     <div className="books-display">
       <h2>This is a bookstore</h2>

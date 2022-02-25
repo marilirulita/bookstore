@@ -15,6 +15,8 @@ h2 {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .navbar {
@@ -58,7 +60,6 @@ h2 {
 .books-display {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
 }
 
 .books-display ul {
