@@ -22,7 +22,7 @@ const AddBook = () => {
 
     if (newBook.title !== '' && newBook.author !== '') {
       dispatch(addBook(newBook));
-      postBookApi(newBook.id, newBook.title);
+      postBookApi(newBook.id, [newBook.title, newBook.author]);
       setState(initState);
     }
   };

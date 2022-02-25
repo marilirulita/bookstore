@@ -28,8 +28,9 @@ export const fetchApiData = () => async (dispatch) => {
   if (resultJson) {
     const objeArr = Object.keys(resultJson).map((key) => ({
       id: key,
-      author: 'Anonimous',
-      ...resultJson[key][0],
+      author: resultJson[key][0].title[1],
+      title: resultJson[key][0].title[0],
+      category: resultJson[key][0].category,
     }));
     dispatch(getApiData(objeArr));
   }
