@@ -4,23 +4,23 @@ import { deleteBookApi } from '../redux/books/books';
 
 const DeleteBook = ({ item }) => {
   const dispatch = useDispatch();
-  const { title, author, id } = item;
+  const {
+    title, author, id, category,
+  } = item;
 
   const deleteBookFromStore = () => {
     dispatch(deleteBookApi(id));
   };
 
   return (
-    <li>
-      <span>
-        {title}
-        {' by '}
-        <strong>{author}</strong>
-      </span>
-      <button id={id} type="submit" value="delete" onClick={deleteBookFromStore}>
-        delete
+    <div className="Lesson-Panel">
+      <span className="School-of">{category}</span>
+      <span className="Title">{title}</span>
+      <span className="Author">{author}</span>
+      <button id={id} type="submit" value="delete" onClick={deleteBookFromStore} className="Rectangle-2">
+        <span className="Update-progress">delete</span>
       </button>
-    </li>
+    </div>
   );
 };
 
@@ -29,6 +29,7 @@ DeleteBook.propTypes = {
     id: PropTypes.string.isRequired,
     title: PropTypes.string,
     author: PropTypes.string,
+    category: PropTypes.string,
   }),
 };
 

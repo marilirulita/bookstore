@@ -14,11 +14,8 @@ const Books = () => {
 
   return (
     <div className="books-display">
-      <h2>This is a bookstore</h2>
+      {books.map((book) => (<DeleteBook key={book.id} item={book} />))}
       <AddBook />
-      <ul>
-        {books.map((book) => (<DeleteBook key={book.id} item={book} />))}
-      </ul>
     </div>
   );
 };
