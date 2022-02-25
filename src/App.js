@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App panel-bg">
+    <div className="panel-bg">
       <Navbar />
       <div className="App-header">
         <Routes>

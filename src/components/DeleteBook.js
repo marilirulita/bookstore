@@ -18,7 +18,7 @@ const DeleteBook = ({ item }) => {
       <span className="Title">{title}</span>
       <span className="Author">{author}</span>
       <button id={id} type="submit" value="delete" onClick={deleteBookFromStore} className="Rectangle-2">
-        <span className="Update-progress">delete</span>
+        <span className="Update-progress">DELETE BOOK</span>
       </button>
     </div>
   );
