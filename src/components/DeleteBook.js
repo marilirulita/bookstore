@@ -1,15 +1,13 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
-import deleteBookApi from './deleteFuntion';
+import { deleteBookApi } from '../redux/books/books';
 
 const DeleteBook = ({ item }) => {
   const dispatch = useDispatch();
   const { title, author, id } = item;
 
   const deleteBookFromStore = () => {
-    dispatch(removeBook(item));
-    deleteBookApi(id);
+    dispatch(deleteBookApi(id));
   };
 
   return (

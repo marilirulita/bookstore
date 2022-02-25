@@ -1,8 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { useState } from 'react';
-import { addBook } from '../redux/books/books';
-import postBookApi from './postFunction';
+import { postBookApi } from '../redux/books/books';
 
 const AddBook = () => {
   const initState = {
@@ -21,8 +20,8 @@ const AddBook = () => {
     };
 
     if (newBook.title !== '' && newBook.author !== '') {
-      dispatch(addBook(newBook));
-      postBookApi(newBook.id, [newBook.title, newBook.author]);
+      dispatch(postBookApi(newBook));
+      // postBookApi(newBook.id, [newBook.title, newBook.author]);
       setState(initState);
     }
   };
