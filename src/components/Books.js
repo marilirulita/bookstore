@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchApiData } from '../redux/books/books';
@@ -13,12 +14,13 @@ const Books = () => {
   }, []);
 
   return (
-    <div className="books-display">
-      <h2>This is a bookstore</h2>
+    <div>
+      <div className="books-display">
+        {books.map((book) => (
+          <DeleteBook key={book.id} item={book} />
+        ))}
+      </div>
       <AddBook />
-      <ul>
-        {books.map((book) => (<DeleteBook key={book.id} item={book} />))}
-      </ul>
     </div>
   );
 };

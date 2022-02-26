@@ -1,4 +1,319 @@
-body {
+.Bookstore-CMS {
+  padding: 9.313rem 6.25rem 11.75rem 6.25rem;
+  background-color: #f5f6fa;
+  width: 1200px;
+}
+
+.panel-bg {
+  border-radius: 4px;
+  box-shadow: 2.5rem 4.062rem 50px 0 rgba(0, 0, 0, 0.2), 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
+}
+
+.navbar {
+  margin-bottom: 2.375rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.Bookstore-CMS1 {
+  margin: 0 2.938rem 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.BOOKS,
+.CATEGORIES {
+  margin: 0 2.563rem 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+  text-decoration: none;
+}
+
+.CATEGORIES {
+  opacity: 0.5;
+}
+
+.Oval {
+  padding: 0.875rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+}
+
+.Mask {
+  width: 1.063rem;
+  height: 1.063rem;
+  color: #0290ff;
+}
+
+.books-display {
+  margin-bottom: 2.5rem;
+}
+
+.Category-display {
+  padding-bottom: 2.5rem;
+}
+
+.Lesson-Panel {
+  margin: 0.938rem 6.25rem;
+  padding: 2rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  display: flex;
+  align-items: flex-end;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.Category {
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.Author {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+/* start edit */
+.comments-section {
+  margin-top: 1.313rem;
+}
+
+.Comments {
+  margin-right: 0.938rem;
+  padding-right: 0.938rem;
+  border-right: 1px solid #e8e8e8;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.Comments:last-child {
+  border: none;
+}
+
+.status-section {
+  display: flex;
+  align-items: center;
+  flex: 1.5;
+}
+
+.percent-section {
+  display: flex;
+  align-items: center;
+  padding-right: 3.688rem;
+  border-right: 1px solid #e8e8e8;
+}
+
+.circle {
+  padding: 0.62rem;
+}
+
+.circle-oval {
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #307bbe, #379cf6);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-image-slice: 1;
+}
+
+.percent-spans {
+  display: flex;
+  flex-direction: column;
+}
+
+.-Percent-Complete {
+  margin: 0.063rem 0.688rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.Completed {
+  margin: 0.438rem 0.75rem;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.chapter-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.688rem;
+}
+
+.Current-Chapter,
+.Current-Lesson {
+  opacity: 0.5;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  color: #121212;
+}
+
+.Current-Chapter {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.813rem;
+  letter-spacing: normal;
+}
+
+.Current-Lesson {
+  margin: 0.438rem 0 1.438rem 0;
+  font-size: 1rem;
+  letter-spacing: -0.4px;
+}
+
+/* finish edit */
+
+.Delete-button {
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+}
+
+.Delete-text {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
+
+.add-book {
+  margin: 0 6.25rem;
+  padding: 1.813rem 0 16.653rem 0;
+  border-top: 2px solid #e8e8e8;
+}
+
+.add-book-title {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.inputs-elements {
+  margin-top: 1.188rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs {
+  flex: 1;
+  margin-right: 2.125rem;
+  padding: 0.813rem 1.063rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.inputs::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.add-book-button {
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+}
+
+.ADD-BOOK {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
 }

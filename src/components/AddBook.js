@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { useState } from 'react';
@@ -21,28 +22,37 @@ const AddBook = () => {
 
     if (newBook.title !== '' && newBook.author !== '') {
       dispatch(postBookApi(newBook));
-      // postBookApi(newBook.id, [newBook.title, newBook.author]);
       setState(initState);
     }
   };
 
   return (
     <div className="add-book">
-      <input
-        type="text"
-        placeholder="Add new book Title"
-        value={state.title}
-        onChange={(e) => setState({ title: e.target.value, author: state.author })}
-      />
-      <input
-        type="text"
-        placeholder="Add new book Author"
-        value={state.author}
-        onChange={(e) => setState({ title: state.title, author: e.target.value })}
-      />
-      <button type="submit" value="add-book" onClick={submitBookToStore}>
-        Add
-      </button>
+      <h2 className="add-book-title">ADD NEW BOOK</h2>
+      <div className="inputs-elements">
+        <input
+          className="inputs"
+          type="text"
+          placeholder="Add new book Title"
+          value={state.title}
+          onChange={(e) => setState({ title: e.target.value, author: state.author })}
+        />
+        <input
+          className="inputs"
+          type="text"
+          placeholder="Add new book Author"
+          value={state.author}
+          onChange={(e) => setState({ title: state.title, author: e.target.value })}
+        />
+        <button
+          type="submit"
+          value="add-book"
+          onClick={submitBookToStore}
+          className="add-book-button"
+        >
+          <span className="ADD-BOOK">ADD BOOK</span>
+        </button>
+      </div>
     </div>
   );
 };
