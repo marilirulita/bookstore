@@ -25,6 +25,17 @@ const DeleteBook = ({ item }) => {
           <span className="Comments">Edit</span>
         </div>
       </div>
+
+      <div>
+      <div>
+        <div className="circle">
+          <div className="circle-oval"></div>
+        </div>
+        <div>
+          <span className="-Percent-Complete">45%</span>
+          <span className="Completed">Completed</span>
+        </div>
+      </div>
       <button
         id={id}
         type="submit"
@@ -34,6 +45,9 @@ const DeleteBook = ({ item }) => {
       >
         <span className="Delete-text">DELETE BOOK</span>
       </button>
+
+      </div>
+      
     </div>
   );
 };
