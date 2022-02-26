@@ -123,6 +123,25 @@
   color: #4386bf;
 }
 
+/* start edit */
+.comments-section {
+  margin-top: 1.313rem;
+}
+
+.Comments {
+  margin-right: 0.938rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+/* finish edit */
+
 .Delete-button {
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;

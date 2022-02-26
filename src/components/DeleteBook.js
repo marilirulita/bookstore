@@ -19,6 +19,11 @@ const DeleteBook = ({ item }) => {
         <span className="Category">{category}</span>
         <span className="Title">{title}</span>
         <span className="Author">{author}</span>
+        <div className="comments-section">
+          <span className="Comments">Comments</span>
+          <span className="Comments">Remove</span>
+          <span className="Comments">Edit</span>
+        </div>
       </div>
       <button
         id={id}
