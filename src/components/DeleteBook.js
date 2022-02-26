@@ -26,7 +26,7 @@ const DeleteBook = ({ item }) => {
         </div>
       </div>
 
-      <div>
+      <div className="status-section">
       <div className="percent-section">
         <div className="circle">
           <div className="circle-oval"></div>
@@ -36,7 +36,11 @@ const DeleteBook = ({ item }) => {
           <span className="Completed">Completed</span>
         </div>
       </div>
-      <button
+
+      <div className="chapter-section">
+        <span className="Current-Chapter">CURRENT CHAPTER</span>
+        <span className="Current-Lesson">Chapter 13</span>
+        <button
         id={id}
         type="submit"
         value="delete"
@@ -45,6 +49,7 @@ const DeleteBook = ({ item }) => {
       >
         <span className="Delete-text">DELETE BOOK</span>
       </button>
+      </div>
 
       </div>
       

@@ -75,18 +75,18 @@
 
 .Lesson-Panel {
   margin: 0.938rem 6.25rem;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  padding: 2rem 1.688rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
 }
 
 .book-info {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .Category {
@@ -140,9 +140,16 @@
   color: #4386bf;
 }
 
+.status-section {
+  display: flex;
+  align-items: center;
+  flex: 1.5;
+}
 .percent-section {
   display: flex;
   align-items: center;
+  padding-right: 3.688rem;
+  border-right: 1px solid #e8e8e8;
 }
 .circle {
   padding: 0.62rem;
@@ -187,6 +194,32 @@
   line-height: normal;
   letter-spacing: normal;
   color: #121212;
+}
+
+.chapter-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.688rem;
+}
+.Current-Chapter,
+.Current-Lesson {
+  opacity: 0.5;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  color: #121212;
+}
+.Current-Chapter {
+  margin: 0;
+  font-size: 0.813rem;
+  letter-spacing: normal;
+}
+.Current-Lesson {
+  margin: 0.438rem 0 1.438rem 0;
+  font-size: 1rem;
+  letter-spacing: -0.4px;
 }
 
 /* finish edit */
