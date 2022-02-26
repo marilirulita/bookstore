@@ -130,6 +130,8 @@
 
 .Comments {
   margin-right: 0.938rem;
+  padding-right: 0.938rem;
+  border-right: 1px solid #e8e8e8;
   font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
@@ -140,17 +142,23 @@
   color: #4386bf;
 }
 
+.Comments:last-child {
+  border: none;
+}
+
 .status-section {
   display: flex;
   align-items: center;
   flex: 1.5;
 }
+
 .percent-section {
   display: flex;
   align-items: center;
   padding-right: 3.688rem;
   border-right: 1px solid #e8e8e8;
 }
+
 .circle {
   padding: 0.62rem;
 }
@@ -160,7 +168,7 @@
   height: 4.25rem;
   border: 5px solid transparent;
   border-radius: 50%;
-  background-image: linear-gradient(white, white), radial-gradient(circle at top left,  #307bbe, #379cf6);
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #307bbe, #379cf6);
   background-origin: border-box;
   background-clip: content-box, border-box;
   border-image-slice: 1;
@@ -201,6 +209,7 @@
   flex-direction: column;
   margin-left: 3.688rem;
 }
+
 .Current-Chapter,
 .Current-Lesson {
   opacity: 0.5;
@@ -211,11 +220,13 @@
   line-height: normal;
   color: #121212;
 }
+
 .Current-Chapter {
   margin: 0;
   font-size: 0.813rem;
   letter-spacing: normal;
 }
+
 .Current-Lesson {
   margin: 0.438rem 0 1.438rem 0;
   font-size: 1rem;

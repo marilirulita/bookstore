@@ -27,32 +27,32 @@ const DeleteBook = ({ item }) => {
       </div>
 
       <div className="status-section">
-      <div className="percent-section">
-        <div className="circle">
-          <div className="circle-oval"></div>
+        <div className="percent-section">
+          <div className="circle">
+            <div className="circle-oval" />
+          </div>
+          <div className="percent-spans">
+            <span className="-Percent-Complete">45%</span>
+            <span className="Completed">Completed</span>
+          </div>
         </div>
-        <div className="percent-spans">
-          <span className="-Percent-Complete">45%</span>
-          <span className="Completed">Completed</span>
+
+        <div className="chapter-section">
+          <span className="Current-Chapter">CURRENT CHAPTER</span>
+          <span className="Current-Lesson">Chapter 13</span>
+          <button
+            id={id}
+            type="submit"
+            value="delete"
+            onClick={deleteBookFromStore}
+            className="Delete-button"
+          >
+            <span className="Delete-text">DELETE BOOK</span>
+          </button>
         </div>
+
       </div>
 
-      <div className="chapter-section">
-        <span className="Current-Chapter">CURRENT CHAPTER</span>
-        <span className="Current-Lesson">Chapter 13</span>
-        <button
-        id={id}
-        type="submit"
-        value="delete"
-        onClick={deleteBookFromStore}
-        className="Delete-button"
-      >
-        <span className="Delete-text">DELETE BOOK</span>
-      </button>
-      </div>
-
-      </div>
-      
     </div>
   );
 };

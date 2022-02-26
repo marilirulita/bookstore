@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
-import { Link } from "react-router-dom";
-import { ImUser } from "react-icons/im";
+import { Link } from 'react-router-dom';
+import { ImUser } from 'react-icons/im';
 
 const Navbar = () => (
   <div className="navbar">
