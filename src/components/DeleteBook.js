@@ -27,11 +27,11 @@ const DeleteBook = ({ item }) => {
       </div>
 
       <div>
-      <div>
+      <div className="percent-section">
         <div className="circle">
           <div className="circle-oval"></div>
         </div>
-        <div>
+        <div className="percent-spans">
           <span className="-Percent-Complete">45%</span>
           <span className="Completed">Completed</span>
         </div>

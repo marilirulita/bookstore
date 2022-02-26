@@ -140,10 +140,12 @@
   color: #4386bf;
 }
 
+.percent-section {
+  display: flex;
+  align-items: center;
+}
 .circle {
-  width: 5.625rem;
-  height: 5.62rem;
-  padding: 0.62rem 0.625rem 0.75rem 0.75rem;
+  padding: 0.62rem;
 }
 
 .circle-oval {
@@ -157,8 +159,13 @@
   border-image-slice: 1;
 }
 
+.percent-spans {
+  display: flex;
+  flex-direction: column;
+}
+
 .-Percent-Complete {
-  margin: 0.063rem 5.75rem 0 0.688rem;
+  margin: 0.063rem 0.688rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: normal;
@@ -170,7 +177,7 @@
 }
 
 .Completed {
-  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  margin: 0.438rem 0.75rem;
   opacity: 0.5;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
