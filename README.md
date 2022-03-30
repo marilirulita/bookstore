@@ -13,9 +13,7 @@
 
 ## Live Demo
 
-[Heroku Link]()
-
-[Netlify Link]()
+[Netlify Link](https://gorgeous-crepe-fc5afc.netlify.app/)
 
 
 ## Getting Started

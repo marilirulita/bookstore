@@ -1,7 +1,6 @@
 .Bookstore-CMS {
-  padding: 9.313rem 6.25rem 11.75rem 6.25rem;
+  padding: 3rem;
   background-color: #f5f6fa;
-  width: 1200px;
 }
 
 .panel-bg {
@@ -11,8 +10,8 @@
 }
 
 .navbar {
-  margin-bottom: 2.375rem;
-  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -67,7 +66,7 @@
 }
 
 .books-display {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .Category-display {
@@ -75,7 +74,7 @@
 }
 
 .Lesson-Panel {
-  margin: 0.938rem 6.25rem;
+  margin-bottom: 1rem ;
   padding: 2rem 1.688rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
@@ -256,8 +255,7 @@
 }
 
 .add-book {
-  margin: 0 6.25rem;
-  padding: 1.813rem 0 16.653rem 0;
+  padding: 1rem 1rem 2rem 1rem;
   border-top: 2px solid #e8e8e8;
 }
 
